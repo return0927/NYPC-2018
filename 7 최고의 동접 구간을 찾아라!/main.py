@@ -37,4 +37,5 @@ print("{}\n{:2}:{:2} {:2}:{:2}".format(
     _max, make_two(_start // 60), make_two(_start % 60), make_two((idx) // 60), make_two((idx) % 60)
 ))
 __time = time()
+print(_time)
 print(__time - __start)

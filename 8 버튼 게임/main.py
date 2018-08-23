@@ -1,6 +1,6 @@
 red, blue = [int(x) for x in input().split(" ")]
 
-before = [1e99, 1e99]
+before = [None, None]
 
 while True:
     if blue == 0 and red != 1:
@@ -16,7 +16,6 @@ while True:
     else:  # blue == red
         blue -= red
 
-    #print(red, blue)
     if before == [red, blue]:
         break
 

@@ -25,7 +25,7 @@ for _type, _records in _storage:
     if _type == "item":
         print(_records[0]['team'])
         continue
-    else:
+    elif _type == "speed":
         _mt = _records[0]['time']
         _board = {"red": 0, "blue": 0}
 
@@ -38,10 +38,10 @@ for _type, _records in _storage:
             else:
                 _score = _score_table[7 - n]
 
-            print(_team, _score)
+            # print(_team, _score)
             _board[_team] += _score
 
-        print(_board)
+        # print(_board)
         if _board['red'] > _board['blue']:
             print("red")
         else:
